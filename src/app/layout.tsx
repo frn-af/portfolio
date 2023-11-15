@@ -19,7 +19,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={cn(myFont.className, "bg-[#EEEEEE]")}>{children}</body>
+      <body className={cn(myFont.className, "bg-[#EEEEEE] overflow-y-hidden")}>
+        {children}
+      </body>
     </html>
   );
 }
