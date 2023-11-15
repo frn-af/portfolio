@@ -66,7 +66,7 @@ export default function Home() {
           <div>cooming</div>
           <div>soon</div>
         </div>
-        <div className="absolute z-[999] w-full h-full mix-blend-multiply bg-[url('../assets/images/overlay.jpg')] bg-contain"></div>
+        <div className="absolute z-[999] w-full h-full mix-blend-multiply bg-[url('../assets/images/overlay.svg')] bg-contain"></div>
       </div>
     </main>
   );
