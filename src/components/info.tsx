@@ -15,6 +15,7 @@ interface InfoProps {
 const infoVariants = cva("w-60 h-0.5", {
   variants: {
     variant: {
+      light: "bg-[#EEEEEE]",
       dark: "bg-[#424242]",
       primary: "bg-[#DF505F]",
       secondary: "bg-[#1F3982]",
@@ -25,6 +26,7 @@ const infoVariants = cva("w-60 h-0.5", {
 const infoTextVariants = cva("uppercase text-sm leading-3", {
   variants: {
     variant: {
+      light: "text-[#EEEEEE]",
       dark: "text-[#424242]",
       primary: "text-[#DF505F]",
       secondary: "text-[#1F3982]",

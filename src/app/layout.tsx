@@ -22,7 +22,7 @@ export default function RootLayout({
       <body
         className={cn(
           myFont.className,
-          "bg-[#EEEEEE] overflow-hidden relative"
+          "bg-[#EEEEEE] overflow-hidden relative h-screen"
         )}
       >
         {children}

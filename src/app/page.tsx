@@ -10,63 +10,58 @@ const ttNorm = localFont({
 
 export default function Home() {
   return (
-    <main className="max-h-screen">
-      <div className="absolute w-full text-2xl text-center pt-10 md:text-left md:px-10">
-        Farhan Alfathra
-      </div>
-      <div className="absolute flex left-[10%] top-[30%] md:top-1/2">
-        <div className="w-12 h-6 bg-[#424242] blur-[2px]"></div>
-        <div className="w-12 h-6 bg-[#DF505f] blur-[2px]"></div>
-        <div className="w-6 h-6 bg-[#1F3982] blur-[2px]"></div>
-      </div>
+    <main className="h-screen">
+      <div className="absolute z-30 w-full h-screen bg-[url('../assets/images/overlay.svg')] mix-blend-color-burn"></div>
       <div className="hidden md:block">
-        <div className="absolute w-60 scale-75 -rotate-90  bottom-0 right-[20%] ">
+        <div className="absolute w-60 scale-90 -rotate-90  bottom-0 right-[20%]">
           <Info color="#424242" variant={"dark"} />
         </div>
-        <div className="absolute w-60 scale-90 -rotate-90  bottom-[60%] right-[20%]">
+        <div className="absolute w-60 scale-90 -rotate-90  bottom-[55%] right-[20%]">
           <Info color="#424242" variant={"dark"} />
         </div>
-        <div className="absolute w-60 scale-[.6]  -rotate-90 bottom-[55%] right-36">
+        <div className="absolute w-60 scale-75  -rotate-90 bottom-[55%] right-36">
           <Info color="#DF505F" variant={"primary"} />
         </div>
-        <div className="absolute w-60 scale-[.6]  -rotate-90  bottom-[25%] right-36">
+        <div className="absolute w-60 scale-75  -rotate-90  bottom-[25%] right-36">
           <Info color="#424242" variant={"dark"} />
         </div>
-        <div className="absolute w-60 scale-[.6]  -rotate-90  bottom-[85%] right-36">
+        <div className="absolute w-60 scale-75  -rotate-90  bottom-[85%] right-36">
           <Info color="#1F3982" variant={"secondary"} />
         </div>
         <div className="absolute w-60 scale-75  -rotate-90  bottom-[90%] right-0">
           <Info color="#DF505F" variant={"primary"} />
         </div>
       </div>
-      <div className="md:hidden">
-        <div className="absolute w-60 scale-75 bottom-[20%] right-0">
-          <Info color="#DF505F" variant={"primary"} />
-        </div>
-        <div className="absolute w-60 scale-75 bottom-[12.5%] left-0">
-          <Info color="#DF505F" variant={"dark"} />
-        </div>
-        <div className="absolute w-60 scale-75 bottom-[5%] right-0">
-          <Info color="#DF505F" variant={"secondary"} />
-        </div>
+      <Image
+        src={hero}
+        alt="site under construction"
+        width={925}
+        height={925}
+        className="absolute transform scale-[1.7] md:scale-100 z-10 mix-blend-exclusion -translate-x-[35%] translate-y-[35%] md:translate-x-0 md:translate-y-0 "
+      />
+      <div className="absolute z-10 w-full text-2xl text-[#EEEEEE] pt-5 md:text-left md:px-5 md:py-2 text-center">
+        Farhan Alfathra
       </div>
-      <div className="flex justify-center items-center h-screen">
-        <Image
-          src={hero}
-          alt="site under construction"
-          width={350}
-          height={350}
-        />
+      <div className="w-full md:w-[900px] md:justify-end ">
         <div
           className={cn(
             ttNorm.className,
-            "uppercase absolute text-center text-4xl leading-9 text-[#DF505F] blur-[1px]"
+            "uppercase text-center text-7xl pt-20 md:text-right md:text-9xl text-[#424242] md:pt-10"
           )}
         >
           <div>cooming</div>
           <div>soon</div>
         </div>
-        <div className="absolute z-[999] w-full h-full mix-blend-multiply bg-[url('../assets/images/overlay.svg')] bg-repeat"></div>
+      </div>
+      <div className="absolute w-full px-10 py-5 md:w-[900px] flex justify-end z-10">
+        <div className="w-12 h-6 bg-[#424242]"></div>
+        <div className="w-12 h-6 bg-[#DF505f]"></div>
+        <div className="w-6 h-6 bg-[#1F3982]"></div>
+      </div>
+      <div className="md:hidden">
+        <div className="absolute transform scale-75 bottom-[15%] -right-24 z-10 -rotate-90">
+          <Info color="#EEEEEE" variant={"light"} />
+        </div>
       </div>
     </main>
   );
