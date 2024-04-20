@@ -2,7 +2,7 @@ import Hero from "@/components/hero";
 
 export default function Home() {
   return (
-    <main className="max-w-7xl">
+    <main className="h-screen mx-auto">
       <Hero />
     </main>
   );
