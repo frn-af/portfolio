@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import { Inter } from "next/font/google";
+import { ThemeProvider } from "@/components/themes-provider";
 
-const myFont = localFont({
-  src: "../assets/fonts/RinjaniBold.ttf",
+const inter = Inter({
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
@@ -43,11 +44,17 @@ export default function RootLayout({
       </head>
       <body
         className={cn(
-          myFont.className,
-          "bg-[#EEEEEE] overflow-hidden relative h-screen"
+          inter.className,
+          "min-h-screen font-sans antialiased"
         )}
       >
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
