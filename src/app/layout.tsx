@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { cn } from "@/lib/utils";
-import { Inter } from "next/font/google";
 import { ThemeProvider } from "@/components/themes-provider";
+import localFont from "next/font/local";
 
-const inter = Inter({
-  subsets: ["latin"],
+const ttnorm = localFont({
+  src: "../assets/fonts/TT-Norms-Regular.woff2",
+  variable: "--font-headings",
 });
 
 export const metadata: Metadata = {
@@ -19,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link
           rel="apple-touch-icon"
@@ -44,7 +45,7 @@ export default function RootLayout({
       </head>
       <body
         className={cn(
-          inter.className,
+          ttnorm.variable,
           "min-h-screen font-sans antialiased"
         )}
       >
