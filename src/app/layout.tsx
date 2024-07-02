@@ -3,11 +3,19 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/themes-provider";
 import localFont from "next/font/local";
+import { Inter } from "next/font/google";
 
 const ttnorm = localFont({
   src: "../assets/fonts/TT-Norms-Regular.woff2",
-  variable: "--font-headings",
+  variable: "--font-body",
 });
+
+const rinjani = localFont({
+  src: "../assets/fonts/RinjaniBold.ttf",
+  variable: "--font-heading",
+});
+
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Farhan Alfathra",
@@ -45,8 +53,10 @@ export default function RootLayout({
       </head>
       <body
         className={cn(
+          inter.className,
           ttnorm.variable,
-          "min-h-screen font-sans antialiased"
+          rinjani.variable,
+          "min-h-screen font-sans antialiased bg-background"
         )}
       >
         <ThemeProvider
