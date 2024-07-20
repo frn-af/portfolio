@@ -3,8 +3,15 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/themes-provider";
 import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 
 const inter = Inter({ subsets: ["latin"] });
+const jetbrains = localFont(
+  {
+    src: "../assets/fonts/JetBrainsMono[wght].ttf",
+    variable: "--font-heading"
+  }
+)
 
 export const metadata: Metadata = {
   title: "Farhan Alfathra",
@@ -43,6 +50,7 @@ export default function RootLayout({
       <body
         className={cn(
           inter.className,
+          jetbrains.variable,
           "min-h-screen font-sans antialiased"
         )}
       >
