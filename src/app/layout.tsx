@@ -2,18 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/themes-provider";
-import localFont from "next/font/local";
 import { Inter } from "next/font/google";
-
-const ttnorm = localFont({
-  src: "../assets/fonts/TT-Norms-Regular.woff2",
-  variable: "--font-body",
-});
-
-const rinjani = localFont({
-  src: "../assets/fonts/RinjaniBold.ttf",
-  variable: "--font-heading",
-});
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -54,14 +43,12 @@ export default function RootLayout({
       <body
         className={cn(
           inter.className,
-          ttnorm.variable,
-          rinjani.variable,
-          "min-h-screen font-sans antialiased bg-background"
+          "min-h-screen font-sans antialiased"
         )}
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="light"
+          defaultTheme="dark"
           enableSystem
         >
           {children}
