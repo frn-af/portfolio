@@ -1,4 +1,3 @@
-"rse client"
 import Image from "next/image";
 import dark from "../assets/images/darklogo.svg";
 import { Github, Instagram, Linkedin, Twitter } from "lucide-react";
