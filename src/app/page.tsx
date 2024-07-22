@@ -1,14 +1,15 @@
 import Header from "@/components/header";
 import Link from "next/link";
 import { Github, Instagram, Linkedin, Twitter } from "lucide-react";
+import MaxWidthWrapper from "@/components/ui/max-width-wrapper";
 
 export default function Home() {
 
   return (
-    <main className="max-w-screen-2xl max-h h-screen mx-auto p-4">
+    <MaxWidthWrapper className="h-screen">
       <div className="h-full flex flex-col justify-between">
         <Header />
-        <div className="p-4">
+        <div>
           <h1 className="text-9xl font-black font-heading capitalize tracking-tighter">
             farhan
           </h1>
@@ -18,7 +19,7 @@ export default function Home() {
             <div className="w-8 h-8 bg-primary rounded-full ml-1"></div>
           </div>
         </div>
-        <div className="w-full h-60 px-4 flex items-end">
+        <div className="w-full h-60 flex items-end">
           <div className="w-[85%] flex justify-between">
             <p className="w-1/3 capitalize font-heading underline-offset-1 underline decoration-primary">project type ;</p>
             <div className="w-1/3 font-heading capitalize">
@@ -47,6 +48,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </main >
+    </MaxWidthWrapper >
   );
 }
