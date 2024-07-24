@@ -56,7 +56,7 @@ const Header = () => {
           <div className="flex">
             <Link href="/contact">
               <h3 className="text-lg uppercase underline mb-4 font-heading underline-offset-1 decoration-primary">
-                ={">"}  start the project</h3>
+                ={">"} open to work</h3>
             </Link>
           </div>
           <h4 className="capitalize mb-4 font-heading">lets make <br />

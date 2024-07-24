@@ -7,6 +7,9 @@ import Image from "next/image";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { Separator } from "@/components/ui/separator";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import Footer from "@/components/footer";
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -47,29 +50,52 @@ export default function About() {
           <h1 className="w-3/4 text-6xl font-heading tracking-tighter ">Hi!, I am <span className="font-bold underline decoration-primary italic">Farhan Alfathra</span> a dedicated Software Engineer based in Indonesia.</h1>
           <h1 className="w-3/4 text-6xl font-heading tracking-tighter ">My goal is to write <span className="font-bold underline decoration-primary italic">maintainable, clean, and understandable code</span> to process was enjoyable.</h1>
           <Separator className="bg-primary" />
-          <p className="text-3xl font-heading">With a profound passion for technology and innovation, I hold a degree in Computer Engineering from Universitas Andalas. My journey in the tech world has been both diverse and enriching, encompassing roles as a full-stack developer and leadership experiences as a former chairman of a prominent organization.</p>
+          <div className="flex justify-center">
+            <Link href="/contact">
+              <Button variant="outline" className=" capitalize text-xl font-heading bg-transparent border-primary"> =={">"} curriculum vitae {"<"}==</Button>
+            </Link>
+          </div>
+          <p className="text-3xl font-heading text-center">With a profound passion for technology and innovation, I hold a degree in Computer Engineering from Universitas Andalas. My journey in the tech world has been both diverse and enriching, encompassing roles as a full-stack developer and leadership experiences as a former chairman of a prominent organization.</p>
           <Card className="bg-transparent border-primary p-4 text-center font-heading">
             <p>My technical repertoire includes an array of modern technologies, with particular expertise
             </p>
-            <div className="flex h-40">
-              <Card className="w-full">
-                <CardHeader>
+            <div className="flex gap-2 mt-4">
+              <Card className="w-full border-primary">
+                <CardHeader className="capitalize">
                   front-end development
+                  <Separator className="bg-primary" />
                 </CardHeader>
                 <CardContent>
                   javascript, typescript, react, next.js, tailwindcss
                 </CardContent>
               </Card>
-              <Card className="w-full">
-                back-end development
+              <Card className="w-full border-primary">
+                <CardHeader className="capitalize">
+                  back-end development
+                  <Separator className="bg-primary" />
+                </CardHeader>
+                <CardContent>
+                  rust, c++
+                </CardContent>
               </Card>
-              <Card className="w-full">
-                Database management
+              <Card className="w-full border-primary">
+                <CardHeader className="capitalize">
+                  Database management
+                  <Separator className="bg-primary" />
+                </CardHeader>
+                <CardContent>
+                  postgresql, mysql, firebase
+                </CardContent>
               </Card>
             </div>
           </Card>
+          <p className="text-3xl font-heading text-center">I am a firm believer in the power of clean, maintainable code and the importance of continuous learning. My approach to software development is holistic, combining technical acumen with a keen eye for detail and a commitment to delivering exceptional results.</p>
+          <p className="text-3xl font-heading text-center">
+            Beyond the lines of code, I am driven by a desire to understand and solve complex problems, innovate, and contribute to projects that make a significant impact. My leadership experience has honed my ability to collaborate effectively, foster team spirit, and drive projects to successful completion.</p>
         </div>
       </div >
+      <Footer />
     </MaxWidthWrapper >
+
   );
 }
