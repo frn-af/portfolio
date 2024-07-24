@@ -15,12 +15,18 @@ const Footer = () => {
           <Separator className="bg-primary mt-10 mb-10" />
           <div className="flex justify-between">
             <p className="w-1/3 font-heading">I am always open to exploring new opportunities, collaborations, and discussions on emerging technologies. Feel free to connect with me on{" "}
-              <span className="underline underline-offset-1 decoration-primary hover:no-underline hover:text-primary">LinkedIn</span>
+              <Link href="https://linkedin.com/in/farhanalfathra" aria-label="linkedin">
+                <span className="underline underline-offset-1 decoration-primary hover:no-underline hover:text-primary">LinkedIn</span>
+              </Link>
               , explore my projects on{" "}
-              <span className="underline underline-offset-1 decoration-primary hover:no-underline hover:text-primary">GitHub</span>
+              <Link href="https://github.com/frn-af" aria-label="github">
+                <span className="underline underline-offset-1 decoration-primary hover:no-underline hover:text-primary">GitHub</span>
+              </Link>
               , or reach out directly for any inquiries or potential collaborations.</p>
             <div className="flex flex-col justify-end gap-4">
-              <Button variant="outline" className="bg-transparent border-primary font-heading">Contact Me</Button>
+              <Link href="/contact">
+                <Button variant="outline" className="w-full bg-transparent border-primary font-heading">Contact Me</Button>
+              </Link>
               <p className="font-heading capitalize text-sm"> {year} © farhan alfathra. All rights reserved.</p>
             </div>
           </div>

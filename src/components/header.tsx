@@ -23,9 +23,9 @@ const navItems = [
     href: "/about",
   },
   {
-    title: "contacts",
+    title: "contact",
     badge: "04",
-    href: "/contacts",
+    href: "/contact",
   },
 ];
 
@@ -56,7 +56,7 @@ const Header = () => {
           <div className="flex">
             <Link href="/contact">
               <h3 className="text-lg uppercase underline mb-4 font-heading underline-offset-1 decoration-primary">
-                ={">"} open to work</h3>
+                ={">"} currently open to work</h3>
             </Link>
           </div>
           <h4 className="capitalize mb-4 font-heading">lets make <br />
