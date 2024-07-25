@@ -33,16 +33,16 @@ const Header = () => {
   const year = new Date().getFullYear();
   return (
     <header className="w-full relative">
-      <div className="w-[85%] flex justify-between">
+      <div className="md:w-[85%] flex justify-between">
         <div className="w-full flex justify-between">
           <Link href="/">
-            <Image src={dark} alt="untilde" width={80} height={80} />
+            <Image src={dark} alt="untilde" width={100} className="w-32 md:w-20" />
           </Link>
-          <div>
+          <div className="flex flex-col md:flex-row items-end md:items-start">
             {navItems.map((item) => (
               <Link href={item.href} key={item.title}>
                 <Button variant="ghost">
-                  <h3 className="underline uppercase font-heading underline-offset-1 decoration-primary"> {item.title}</h3>
+                  <h3 className="underline text-xl md:text-sm uppercase font-heading underline-offset-1 decoration-primary"> {item.title}</h3>
                   <Badge variant="ghost" className="-mt-3 -ml-1 text-primary">
                     [~{item.badge}]
                   </Badge>
@@ -51,7 +51,7 @@ const Header = () => {
             ))}
           </div>
         </div>
-        <div className="ml-20 relative text-sm">
+        <div className="hidden md:block ml-20 relative text-sm">
           <Separator className="bg-primary mb-4" />
           <div className="flex">
             <Link href="/contact">
@@ -74,7 +74,7 @@ const Header = () => {
             <p className="font-heading capitalize text-sm"> {year} © farhan alfathra.<br /> All rights reserved.</p>
           </div>
         </div >
-        <div className="absolute right-0">
+        <div className="absolute hidden md:block right-0">
           <Image src={frnaf} alt="farhanalfathra" width={100} />
         </div>
       </div >

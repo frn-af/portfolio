@@ -33,7 +33,7 @@ const Footer = () => {
         </div>
         <div className="w-1/3 text-right text-sm flex flex-col justify-between items-end">
           <Link href="/">
-            <Image src={dark} width={80} alt="Farhan Alfathra" />
+            <Image src={dark} width={80} alt="Farhan Alfathra" className="rounded-md" />
           </Link>
           <div>
             <p className="font-heading capitalize underline underline-offset-1 decoration-primary">lets connect :</p>
