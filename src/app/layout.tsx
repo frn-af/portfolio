@@ -45,7 +45,7 @@ export default function RootLayout({
         />
         <meta name="msapplication-TileColor" content="#424242" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        <meta name="theme-color" content="#000000" />
+        <meta name="theme-color" content="#424242" />
       </head>
       <body
         className={cn(
