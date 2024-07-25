@@ -9,7 +9,7 @@ export default function Home() {
     <MaxWidthWrapper className="h-screen">
       <div className="h-full flex flex-col justify-between">
         <Header />
-        <div className="flex flex-col md:h-1/3">
+        <div className="flex flex-col h-1/3">
           <h1 className="text-6xl md:text-8xl 2xl:text-9xl font-black font-heading capitalize tracking-tighter">
             farhan
           </h1>

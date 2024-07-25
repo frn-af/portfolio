@@ -1,12 +1,18 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
 import frnaf from "../assets/images/frnaf.svg";
-import tilde from "../assets/images/tilde.svg";
+import frnafdark from "../assets/images/frnaf-dark.svg";
 import frnaf2 from "../assets/images/frnaf2.svg";
+import frnaf2dark from "../assets/images/frnaf2-dark.svg";
 import dark from "../assets/images/lightlogo.svg";
+import light from "../assets/images/darklogo.svg";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
 import { Separator } from "./ui/separator";
+import { useTheme } from "next-themes";
+import { Moon, Sun } from "lucide-react";
+import { useEffect, useState } from "react";
 
 const navItems = [
   {
@@ -31,14 +37,55 @@ const navItems = [
   },
 ];
 
+export function Toogle() {
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  const isDark = theme === "dark";
+
+  useEffect(() => {
+    setMounted(true);
+  })
+
+  if (!mounted) return null;
+
+  return (
+    <div>
+      <Button variant="outline" onClick={() =>
+        setTheme(isDark ? "light" : "dark")
+      } >
+        {isDark ?
+          <Moon className="h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+          :
+          <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+        }
+      </Button>
+    </div>
+
+  )
+}
 const Header = () => {
   const year = new Date().getFullYear();
+  const { theme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  const isDark = theme === "dark";
+
+  useEffect(() => {
+    setMounted(true);
+  })
+
+  if (!mounted) return null;
   return (
-    <header className="w-full relative">
+    <header className="w-full relative h-60">
       <div className="md:w-[85%] md:flex justify-between">
         <div className="hidden md:w-3/4 md:flex md:justify-between">
           <Link href="/">
-            <Image src={dark} alt="untilde" width={100} className="w-28" />
+            {isDark ?
+              <Image src={dark} alt="untilde" width={100} className="w-28" />
+              :
+              <Image src={light} alt="untilde" width={100} className="w-28" />
+            }
           </Link>
           <div className="flex flex-row">
             {navItems.map((item) => (
@@ -52,6 +99,7 @@ const Header = () => {
               </Link>
             ))}
           </div>
+          <Toogle />
         </div>
         <div className="hidden absolute md:block ml-20 text-sm top-0 right-[15%]">
           <Separator className="bg-primary mb-4" />
@@ -77,12 +125,21 @@ const Header = () => {
           </div>
         </div >
         <div className="absolute hidden md:block right-0">
-          <Image src={frnaf} alt="farhanalfathra" width={100} />
+
+          {isDark ?
+            <Image src={frnaf} alt="farhanalfathra" width={100} />
+            :
+            <Image src={frnafdark} alt="farhanalfathra" width={100} />
+          }
         </div>
       </div >
       <div className="w-full md:hidden flex flex-col items-end justify-end">
         <Link href="/">
-          <Image src={frnaf2} alt="untilde" width={180} />
+          {isDark ?
+            <Image src={frnaf2} alt="untilde" width={180} />
+            :
+            <Image src={frnaf2dark} alt="untilde" width={180} />
+          }
         </Link>
         <Link href="/contact">
           <h3 className="uppercase text-xl text-right underline mt-4 font-heading underline-offset-1 decoration-primary">

@@ -43,9 +43,9 @@ export default function RootLayout({
           href="/icons/safari-pinned-tab.svg"
           color="#5bbad5"
         />
-        <meta name="msapplication-TileColor" content="#424242" />
+        <meta name="msapplication-TileColor" content="#1C1C1C" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        <meta name="theme-color" content="#424242" />
+        <meta name="theme-color" content="#1C1C1C" />
       </head>
       <body
         className={cn(
@@ -58,6 +58,7 @@ export default function RootLayout({
           attribute="class"
           defaultTheme="system"
           enableSystem
+          disableTransitionOnChange
         >
           {children}
         </ThemeProvider>
