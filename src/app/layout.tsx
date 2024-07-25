@@ -44,8 +44,6 @@ export default function RootLayout({
           color="#5bbad5"
         />
         <meta name="msapplication-TileColor" content="#424242" />
-        <meta name="theme-color" content="#ffffff" />
-        <meta name="theme-color" content="#ffffff" />
       </head>
       <body
         className={cn(
