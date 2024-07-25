@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import frnaf from "../assets/images/frnaf.svg";
+import tilde from "../assets/images/tilde.svg";
+import frnaf2 from "../assets/images/frnaf2.svg";
 import dark from "../assets/images/lightlogo.svg";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
@@ -33,12 +35,12 @@ const Header = () => {
   const year = new Date().getFullYear();
   return (
     <header className="w-full relative">
-      <div className="md:w-[85%] flex justify-between">
-        <div className="w-full flex justify-between">
+      <div className="md:w-[85%] md:flex justify-between">
+        <div className="hidden md:w-3/4 md:flex md:justify-between">
           <Link href="/">
-            <Image src={dark} alt="untilde" width={100} className="w-32 md:w-20" />
+            <Image src={dark} alt="untilde" width={100} className="w-28" />
           </Link>
-          <div className="flex flex-col md:flex-row items-end md:items-start">
+          <div className="flex flex-row">
             {navItems.map((item) => (
               <Link href={item.href} key={item.title}>
                 <Button variant="ghost">
@@ -51,9 +53,9 @@ const Header = () => {
             ))}
           </div>
         </div>
-        <div className="hidden md:block ml-20 relative text-sm">
+        <div className="hidden absolute md:block ml-20 text-sm top-0 right-[15%]">
           <Separator className="bg-primary mb-4" />
-          <div className="flex">
+          <div >
             <Link href="/contact">
               <h3 className="uppercase underline mb-4 font-heading underline-offset-1 decoration-primary">
                 ={">"} currently open to work</h3>
@@ -78,6 +80,15 @@ const Header = () => {
           <Image src={frnaf} alt="farhanalfathra" width={100} />
         </div>
       </div >
+      <div className="w-full md:hidden flex flex-col items-end justify-end">
+        <Link href="/">
+          <Image src={frnaf2} alt="untilde" width={180} />
+        </Link>
+        <Link href="/contact">
+          <h3 className="uppercase text-xl text-right underline mt-4 font-heading underline-offset-1 decoration-primary">
+            currently <br /> open to work</h3>
+        </Link>
+      </div>
     </header>
   )
 }

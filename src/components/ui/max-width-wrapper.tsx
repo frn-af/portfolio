@@ -5,7 +5,7 @@ const MaxWidthWrapper = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
 >(({ className, ...props }, ref) => (
-  <div
+  <main
     ref={ref}
     className={cn(
       "max-w-screen-2xl mx-auto p-4",
