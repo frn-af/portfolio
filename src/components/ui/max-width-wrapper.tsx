@@ -14,4 +14,5 @@ const MaxWidthWrapper = React.forwardRef<
     {...props}
   />
 ))
+MaxWidthWrapper.displayName = "MaxWidthWrapper"
 export default MaxWidthWrapper;

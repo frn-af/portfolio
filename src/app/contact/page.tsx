@@ -45,7 +45,7 @@ export default function Contact() {
               my location:
             </h4>
             <h3 className="mt-2 text-sm">
-              I'am currently based in Padang, West Sumatra, Indonesia
+              I&apos;am currently based in Padang, West Sumatra, Indonesia
             </h3>
           </div>
           <div>
