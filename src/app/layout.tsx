@@ -44,6 +44,8 @@ export default function RootLayout({
           color="#5bbad5"
         />
         <meta name="msapplication-TileColor" content="#424242" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="theme-color" content="#000000" />
       </head>
       <body
         className={cn(
@@ -54,7 +56,7 @@ export default function RootLayout({
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme="system"
           enableSystem
         >
           {children}
