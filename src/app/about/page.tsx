@@ -55,42 +55,8 @@ export default function About() {
               <Button variant="outline" className=" capitalize font-heading bg-transparent border-primary"> =={">"} curriculum vitae {"<"}==</Button>
             </Link>
           </div>
-          <p className="text-xl font-heading text-center">With a profound passion for technology and innovation, I hold a degree in Computer Engineering from Universitas Andalas. My journey in the tech world has been both diverse and enriching, encompassing roles as a full-stack developer and leadership experiences as a former chairman of a prominent organization.</p>
-          <Card className="bg-transparent border-primary p-4 text-center font-heading">
-            <p>My technical repertoire includes an array of modern technologies, with particular expertise
-            </p>
-            <div className="flex gap-2 mt-4">
-              <Card className="w-full border-primary">
-                <CardHeader className="capitalize">
-                  front-end development
-                  <Separator className="bg-primary" />
-                </CardHeader>
-                <CardContent>
-                  javascript, typescript, react, next.js, tailwindcss
-                </CardContent>
-              </Card>
-              <Card className="w-full border-primary">
-                <CardHeader className="capitalize">
-                  back-end development
-                  <Separator className="bg-primary" />
-                </CardHeader>
-                <CardContent>
-                  rust, c++
-                </CardContent>
-              </Card>
-              <Card className="w-full border-primary">
-                <CardHeader className="capitalize">
-                  Database management
-                  <Separator className="bg-primary" />
-                </CardHeader>
-                <CardContent>
-                  postgresql, mysql, firebase
-                </CardContent>
-              </Card>
-            </div>
-          </Card>
-          <p className="text-xl font-heading text-center">I am a firm believer in the power of clean, maintainable code and the importance of continuous learning. My approach to software development is holistic, combining technical acumen with a keen eye for detail and a commitment to delivering exceptional results.</p>
-          <p className="text-xl font-heading text-center">
+          <p className="text-3xl font-heading text-center">I am a firm believer in the power of maintainable code and the importance of continuous learning. My approach to software development is holistic, combining technical acumen with a keen eye for detail and a commitment to delivering exceptional results.</p>
+          <p className="text-3xl font-heading text-center">
             Beyond the lines of code, I am driven by a desire to understand and solve complex problems, innovate, and contribute to projects that make a significant impact. My leadership experience has honed my ability to collaborate effectively, foster team spirit, and drive projects to successful completion.</p>
         </div>
       </div >
