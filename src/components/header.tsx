@@ -36,13 +36,13 @@ const Header = () => {
       <div className="w-[85%] flex justify-between">
         <div className="w-full flex justify-between">
           <Link href="/">
-            <Image src={dark} alt="untilde" width={90} height={90} />
+            <Image src={dark} alt="untilde" width={80} height={80} />
           </Link>
           <div>
             {navItems.map((item) => (
               <Link href={item.href} key={item.title}>
                 <Button variant="ghost">
-                  <h3 className="underline uppercase text-xl font-heading underline-offset-1 decoration-primary"> {item.title}</h3>
+                  <h3 className="underline uppercase font-heading underline-offset-1 decoration-primary"> {item.title}</h3>
                   <Badge variant="ghost" className="-mt-3 -ml-1 text-primary">
                     [~{item.badge}]
                   </Badge>
@@ -51,11 +51,11 @@ const Header = () => {
             ))}
           </div>
         </div>
-        <div className="text-lg ml-20 relative">
+        <div className="ml-20 relative text-sm">
           <Separator className="bg-primary mb-4" />
           <div className="flex">
             <Link href="/contact">
-              <h3 className="text-lg uppercase underline mb-4 font-heading underline-offset-1 decoration-primary">
+              <h3 className="uppercase underline mb-4 font-heading underline-offset-1 decoration-primary">
                 ={">"} currently open to work</h3>
             </Link>
           </div>
@@ -75,7 +75,7 @@ const Header = () => {
           </div>
         </div >
         <div className="absolute right-0">
-          <Image src={frnaf} alt="farhanalfathra" width={120} />
+          <Image src={frnaf} alt="farhanalfathra" width={100} />
         </div>
       </div >
     </header>

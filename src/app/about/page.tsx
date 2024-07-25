@@ -36,26 +36,26 @@ export default function About() {
           <Breadcrumb>
             <BreadcrumbList>
               <BreadcrumbItem>
-                <BreadcrumbLink href="/" className="text-xl font-heading">Home</BreadcrumbLink>
+                <BreadcrumbLink href="/" className="font-heading">Home</BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator >
                 <h3 className="text-lg uppercase font-heading text-primary">
                   ={">"}</h3>
               </BreadcrumbSeparator>
               <BreadcrumbItem>
-                <BreadcrumbLink href="/about" className="text-xl font-heading">About</BreadcrumbLink>
+                <BreadcrumbLink href="/about" className="font-heading">About</BreadcrumbLink>
               </BreadcrumbItem>
             </BreadcrumbList>
           </Breadcrumb>
-          <h1 className="w-3/4 text-6xl font-heading tracking-tighter ">Hi!, I am <span className="font-bold underline decoration-primary italic">Farhan Alfathra</span> a dedicated Software Engineer based in Indonesia.</h1>
-          <h1 className="w-3/4 text-6xl font-heading tracking-tighter ">My goal is to write <span className="font-bold underline decoration-primary italic">maintainable, clean, and understandable code</span> to process was enjoyable.</h1>
+          <h1 className="w-3/4 text-5xl font-heading tracking-tighter ">Hi!, I am <span className="font-bold underline underline-offset-1 decoration-primary italic">Farhan Alfathra</span> a dedicated Software Engineer based in Indonesia.</h1>
+          <h1 className="w-3/4 text-5xl font-heading tracking-tighter ">My goal is to write <span className="font-bold underline underline-offset-1 decoration-primary italic">maintainable, clean, and understandable code</span> to process was enjoyable.</h1>
           <Separator className="bg-primary" />
           <div className="flex justify-center">
             <Link href="/contact">
-              <Button variant="outline" className=" capitalize text-xl font-heading bg-transparent border-primary"> =={">"} curriculum vitae {"<"}==</Button>
+              <Button variant="outline" className=" capitalize font-heading bg-transparent border-primary"> =={">"} curriculum vitae {"<"}==</Button>
             </Link>
           </div>
-          <p className="text-3xl font-heading text-center">With a profound passion for technology and innovation, I hold a degree in Computer Engineering from Universitas Andalas. My journey in the tech world has been both diverse and enriching, encompassing roles as a full-stack developer and leadership experiences as a former chairman of a prominent organization.</p>
+          <p className="text-xl font-heading text-center">With a profound passion for technology and innovation, I hold a degree in Computer Engineering from Universitas Andalas. My journey in the tech world has been both diverse and enriching, encompassing roles as a full-stack developer and leadership experiences as a former chairman of a prominent organization.</p>
           <Card className="bg-transparent border-primary p-4 text-center font-heading">
             <p>My technical repertoire includes an array of modern technologies, with particular expertise
             </p>
@@ -89,8 +89,8 @@ export default function About() {
               </Card>
             </div>
           </Card>
-          <p className="text-3xl font-heading text-center">I am a firm believer in the power of clean, maintainable code and the importance of continuous learning. My approach to software development is holistic, combining technical acumen with a keen eye for detail and a commitment to delivering exceptional results.</p>
-          <p className="text-3xl font-heading text-center">
+          <p className="text-xl font-heading text-center">I am a firm believer in the power of clean, maintainable code and the importance of continuous learning. My approach to software development is holistic, combining technical acumen with a keen eye for detail and a commitment to delivering exceptional results.</p>
+          <p className="text-xl font-heading text-center">
             Beyond the lines of code, I am driven by a desire to understand and solve complex problems, innovate, and contribute to projects that make a significant impact. My leadership experience has honed my ability to collaborate effectively, foster team spirit, and drive projects to successful completion.</p>
         </div>
       </div >

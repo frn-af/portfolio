@@ -10,16 +10,16 @@ export default function Home() {
       <div className="h-full flex flex-col justify-between">
         <Header />
         <div>
-          <h1 className="text-9xl font-black font-heading capitalize tracking-tighter">
+          <h1 className="text-8xl 2xl:text-9xl font-black font-heading capitalize tracking-tighter">
             farhan
           </h1>
           <div className="flex">
-            <h1 className="text-9xl font-black font-heading capitalize tracking-tighter">alfathra
+            <h1 className="text-8xl 2xl:text-9xl font-black font-heading capitalize tracking-tighter">alfathra
             </h1>
             <div className="w-8 h-8 bg-primary rounded-full ml-1"></div>
           </div>
         </div>
-        <div className="w-full h-60 flex items-end">
+        <div className="w-full h-60 flex text-sm items-end">
           <div className="w-[85%] flex justify-between">
             <p className="w-1/3 capitalize font-heading underline-offset-1 underline decoration-primary">project type ;</p>
             <div className="w-1/3 font-heading capitalize">

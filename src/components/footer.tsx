@@ -11,9 +11,9 @@ const Footer = () => {
     <footer className="mt-40">
       <div className="flex w-[85%]">
         <div className="w-3/4">
-          <h1 className=" text-4xl font-bold capitalize text-right font-heading ">Get in touch</h1>
+          <h1 className=" text-3xl font-bold capitalize text-right font-heading ">Get in touch</h1>
           <Separator className="bg-primary mt-10 mb-10" />
-          <div className="flex justify-between">
+          <div className="flex justify-between text-xs">
             <p className="w-1/3 font-heading">I am always open to exploring new opportunities, collaborations, and discussions on emerging technologies. Feel free to connect with me on{" "}
               <Link href="https://linkedin.com/in/farhanalfathra" aria-label="linkedin">
                 <span className="underline underline-offset-1 decoration-primary hover:no-underline hover:text-primary">LinkedIn</span>
@@ -27,13 +27,13 @@ const Footer = () => {
               <Link href="/contact">
                 <Button variant="outline" className="w-full bg-transparent border-primary font-heading">Contact Me</Button>
               </Link>
-              <p className="font-heading capitalize text-sm"> {year} © farhan alfathra. All rights reserved.</p>
+              <p className="font-heading capitalize text-xs"> {year} © farhan alfathra. All rights reserved.</p>
             </div>
           </div>
         </div>
-        <div className="w-1/3 text-right flex flex-col justify-between items-end">
+        <div className="w-1/3 text-right text-sm flex flex-col justify-between items-end">
           <Link href="/">
-            <Image src={dark} width={100} alt="Farhan Alfathra" className="rounded-md" />
+            <Image src={dark} width={80} alt="Farhan Alfathra" className="rounded-md" />
           </Link>
           <div>
             <p className="font-heading capitalize underline underline-offset-1 decoration-primary">lets connect :</p>
