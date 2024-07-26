@@ -77,7 +77,7 @@ const Header = () => {
 
   if (!mounted) return null;
   return (
-    <header className="w-full relative h-60">
+    <header className="w-full relative h-40 md:h-60">
       <div className="md:w-[85%] md:flex justify-between">
         <div className="hidden md:w-3/4 md:flex md:justify-between">
           <Link href="/">
