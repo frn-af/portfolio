@@ -11,9 +11,9 @@ export default function Contact() {
       <div>
         <Header />
       </div>
-      <div className="w-[85%]">
-        <div className="w-3/4">
-          <div className="flex justify-between items-center">
+      <div className="md:w-[85%] flex-grow justify-between flex flex-col">
+        <div className="md:w-3/4 flex-grow md:flex-grow-0 justify-center flex flex-col">
+          <div className="md:flex justify-between items-center">
             <Breadcrumb className="w-1/3">
               <BreadcrumbList >
                 <BreadcrumbItem>
@@ -25,59 +25,63 @@ export default function Contact() {
                 </BreadcrumbSeparator>
               </BreadcrumbList>
             </Breadcrumb>
-            <h1 className="w-full text-8xl font-black text-center font-heading tracking-tighter ">Contacts</h1>
+            <h1 className="w-full text-6xl md:text-8xl md:text-center font-heading tracking-tighter ">Contacts</h1>
           </div>
+          <Separator className="bg-primary mt-2" />
         </div>
-      </div>
-      <div className="w-[85%] flex-grow mt-4">
-        <Separator className="bg-primary w-3/4" />
-        <div className="w-3/4 font-heading flex flex-grow pt-10 gap-8 justify-between">
-          <div>
+        <div className="flex gap-8 mt-10 md:w-3/4 flex-grow font-heading">
+          <div className="w-1/2">
             <h4 className="capitalize text-xl">
               start a<br /> conversation:
             </h4>
-            <h3 className="mt-10 text-xl underline underline-offset-1 decoration-primary">
-              contact@farhanalfathra.me
+            <h3 className="md:mt-10 mt-4 text-xl md:text-4xl underline underline-offset-1 decoration-primary">
+              contact<br className="" />
+              @fathra.com
             </h3>
           </div>
-          <div>
+          <div className="w-1/2 hidden md:block">
             <h4 className="capitalize text-xl">
               my location:
             </h4>
-            <h3 className="mt-2 text-sm">
+            <h3 className="mt-8 md:text-xl">
               I&apos;am currently based in Padang, West Sumatra, Indonesia
             </h3>
           </div>
-          <div>
+          <div className="w-1/2">
             <h4 className="capitalize text-xl">
               call me:
             </h4>
-            <h3 className="mt-10 text-4xl underline underline-offset-1 decoration-primary">
-              +62 8-12 739-990-21
+            <h3 className="mt-10 md:mt-16 text-3xl md:text-4xl underline underline-offset-1 decoration-primary">
+              +62 812 73-9990-21
             </h3>
           </div>
         </div>
-      </div>
-      <div className="w-[85%]">
-        <div className="w-3/4 flex items-center justify-between gap-4">
-          <p className="font-heading capitalize underline underline-offset-1 decoration-primary">find me on :</p>
-          <div className="flex gap-2 font-heading ">
-            <Link href="https://instagram.com/frn.af" aria-label="instagram">
-              <Button variant="outline" className="rounded-full capitalize" >Instagram</Button>
-            </Link>
-            <Link href="https://x.com/frn_af" aria-label="x">
-              <Button variant="outline" className="rounded-full capitalize" >twitter</Button>
-            </Link>
-            <Link href="https://github.com/frn-af" aria-label="github">
-              <Button variant="outline" className="rounded-full capitalize" >github</Button>
-            </Link>
-            <Link href="https://linkedin.com/in/farhanalfathra" aria-label="linkedin">
-              <Button variant="outline" className="rounded-full capitalize" >linkedin</Button>
-            </Link>
+        <div className="flex flex-grow md:flex-grow-0 gap-8">
+          <div className="md:hidden w-1/2 font-heading">
+            <h4 className="capitalize text-xl">
+              my location:
+            </h4>
+            <h3 className="mt-8 md:text-xl">
+              I&apos;am currently based in Padang, West Sumatra, Indonesia
+            </h3>
           </div>
-          <Link href="https://linkedin.com/in/farhanalfathra" aria-label="linkedin">
-            <Button variant="link" className="rounded-full capitalize font-heading text-foreground" >Explore more =={">"}</Button>
-          </Link>
+          <div className="w-1/2 gap-4">
+            <p className="font-heading text-xl capitalize ">find me on :</p>
+            <div className="md:flex font-heading mt-8 md:mt-2">
+              <Link href="https://instagram.com/frn.af" aria-label="instagram">
+                <Button variant="outline" className="rounded-full capitalize mr-2" >Instagram</Button>
+              </Link>
+              <Link href="https://x.com/frn_af" aria-label="x">
+                <Button variant="outline" className="rounded-full capitalize mr-2" >twitter</Button>
+              </Link>
+              <Link href="https://github.com/frn-af" aria-label="github">
+                <Button variant="outline" className="rounded-full capitalize mr-2" >github</Button>
+              </Link>
+              <Link href="https://linkedin.com/in/farhanalfathra" aria-label="linkedin">
+                <Button variant="outline" className="rounded-full capitalize" >linkedin</Button>
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </MaxWidthWrapper >

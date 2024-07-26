@@ -114,7 +114,7 @@ const Header = () => {
             together
           </h4>
           <h4 className="mb-4 text-right font-heading">Contact :<br />
-            <span className="underline underline-offset-1 decoration-primary">contact@farhanalfathra.com</span>
+            <span className="underline underline-offset-1 decoration-primary">contact@fathra.com</span>
           </h4>
           <h4 className="mb-4 text-right font-heading">Instagram :<br />
             <span className="underline underline-offset-1 decoration-primary">@frn.af</span>
