@@ -60,18 +60,18 @@ export default function Contact() {
           </div>
           <div className="w-1/2 gap-4">
             <p className="font-heading text-xl capitalize md:text-right ">find me on :</p>
-            <div className="md:flex font-heading mt-2 md:justify-end">
+            <div className="md:flex font-heading mt-2 gap-2 md:justify-end">
               <Link href="https://instagram.com/frn.af" aria-label="instagram">
-                <Button variant="outline" className="rounded-full capitalize mr-2" >Instagram</Button>
+                <Button variant="outline" className="rounded-full capitalize mt-2" >Instagram</Button>
               </Link>
               <Link href="https://x.com/frn_af" aria-label="x">
-                <Button variant="outline" className="rounded-full capitalize mr-2" >twitter</Button>
+                <Button variant="outline" className="rounded-full capitalize mt-2" >twitter</Button>
               </Link>
               <Link href="https://github.com/frn-af" aria-label="github">
-                <Button variant="outline" className="rounded-full capitalize mr-2" >github</Button>
+                <Button variant="outline" className="rounded-full capitalize mt-2" >github</Button>
               </Link>
               <Link href="https://linkedin.com/in/farhanalfathra" aria-label="linkedin">
-                <Button variant="outline" className="rounded-full capitalize" >linkedin</Button>
+                <Button variant="outline" className="rounded-full capitalize mt-2" >linkedin</Button>
               </Link>
             </div>
           </div>
