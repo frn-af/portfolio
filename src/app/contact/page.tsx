@@ -25,7 +25,7 @@ export default function Contact() {
                 </BreadcrumbSeparator>
               </BreadcrumbList>
             </Breadcrumb>
-            <h1 className="w-full text-5xl text-center font-heading tracking-tighter ">Contacts</h1>
+            <h1 className="w-full text-8xl font-black text-center font-heading tracking-tighter ">Contacts</h1>
           </div>
         </div>
       </div>

@@ -51,13 +51,13 @@ export function Toogle() {
 
   return (
     <div>
-      <Button variant="outline" onClick={() =>
+      <Button variant="link" onClick={() =>
         setTheme(isDark ? "light" : "dark")
       } >
         {isDark ?
-          <Moon className="h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+          <Moon className="h-[1.5rem] w-[1.5rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
           :
-          <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+          <Sun className="h-[1.5rem] w-[1.5rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
         }
       </Button>
     </div>
@@ -87,7 +87,7 @@ const Header = () => {
               <Image src={light} alt="untilde" width={100} className="w-28" />
             }
           </Link>
-          <div className="flex flex-row">
+          <div className="flex flex-row justify-between">
             {navItems.map((item) => (
               <Link href={item.href} key={item.title}>
                 <Button variant="ghost">
@@ -98,8 +98,8 @@ const Header = () => {
                 </Button>
               </Link>
             ))}
+            <Toogle />
           </div>
-          <Toogle />
         </div>
         <div className="hidden absolute md:block ml-20 text-sm top-0 right-[15%]">
           <Separator className="bg-primary mb-4" />
