@@ -2,6 +2,7 @@ import Header from "@/components/header";
 import Link from "next/link";
 import { Github, Instagram, Linkedin, Twitter } from "lucide-react";
 import MaxWidthWrapper from "@/components/ui/max-width-wrapper";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
 
@@ -18,6 +19,9 @@ export default function Home() {
             </h1>
             <div className="w-4 h-4 md:w-8 md:h-8 bg-primary rounded-full ml-1"></div>
           </div>
+          <Link href="/about" aria-label="about">
+            <Button variant="outline" className="md:hidden font-heading capitalize mt-4 w-32">about me</Button>
+          </Link>
         </div>
         <div className="w-full text-sm">
           <div className="md:w-[85%] md:flex justify-between">
