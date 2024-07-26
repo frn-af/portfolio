@@ -39,35 +39,28 @@ export default function Contact() {
               @fathra.com
             </h3>
           </div>
-          <div className="w-1/2 hidden md:block">
-            <h4 className="capitalize text-xl">
-              my location:
-            </h4>
-            <h3 className="mt-8 md:text-xl">
-              I&apos;am currently based in Padang, West Sumatra, Indonesia
-            </h3>
-          </div>
           <div className="w-1/2">
             <h4 className="capitalize text-xl">
               call me:
             </h4>
             <h3 className="mt-10 md:mt-16 text-3xl md:text-4xl underline underline-offset-1 decoration-primary">
-              +62 812 73-9990-21
+              +62 812< br />
+              73-9990-21
             </h3>
           </div>
         </div>
-        <div className="flex flex-grow md:flex-grow-0 gap-8">
-          <div className="md:hidden w-1/2 font-heading">
+        <div className="flex flex-grow md:flex-grow-0 md:justify-center gap-8 ">
+          <div className="w-1/2 font-heading">
             <h4 className="capitalize text-xl">
               my location:
             </h4>
-            <h3 className="mt-8 md:text-xl">
+            <h3 className="md:text-xl mt-2">
               I&apos;am currently based in Padang, West Sumatra, Indonesia
             </h3>
           </div>
           <div className="w-1/2 gap-4">
-            <p className="font-heading text-xl capitalize ">find me on :</p>
-            <div className="md:flex font-heading mt-8 md:mt-2">
+            <p className="font-heading text-xl capitalize md:text-right ">find me on :</p>
+            <div className="md:flex font-heading mt-2 md:justify-end">
               <Link href="https://instagram.com/frn.af" aria-label="instagram">
                 <Button variant="outline" className="rounded-full capitalize mr-2" >Instagram</Button>
               </Link>
